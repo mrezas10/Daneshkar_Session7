@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container-15 {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 100fr / repeat(2, 50fr);
+    grid-template-areas: "login-image login-inputs";
+}
+
+.login-image-container {
+    grid-area: login-image;
+    background-color: #a4c4b5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.login-image {
+    width: 50%;
+}
+
+.login-inputs-container {
+    grid-area: login-inputs;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0 5rem;
+}
+
+.login-inputs {
+    width: 50%;
+    margin-bottom: 0;
+}
+.welcome-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #a7a6a7;
+    margin-bottom: 10vh;
+}
+
+.label-style {
+    font-family: 'Open Sans', sans-serif; !important;
+    color: #a7a6a7;
+}
+.logo-container {
+    width: 150px;
+    height: 30vh;
+
+}
+.login-button-container {
+    text-align: center;
+    width: 50%;
+}
+
+.login-button {
+    width: 150px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: #696969;
+}
+.normal-text {
+    width: 50%;
+    color: white;
+}
+.login-caption {
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login-description {
+    font-weight: lighter;
+    font-size: 2.2rem;
+    text-align: center;
+}
+.forget-password {
+    text-align: right;
+    color: grey;
+    margin-top: 4px;
+    font-size: 1.3rem;
+}
+.login-options {
+    text-align: center;
+    margin: 20px 0;
+}
+.link-style {
+    color: #6d895b;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    .main-container-15 {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template: repeat(2, 50fr) / 100fr;
+        grid-template-areas: "login-image" "login-inputs";
+    }
+}
+@media screen and (max-width: 320px) {
+    .main-container-15 {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template: repeat(2, 50fr) / 100fr;
+        grid-template-areas: "login-image" "login-inputs";
+    }
+    .login-button {
+        width: 100px;
+        border-radius: 30px;
+        margin-top: 10px;
+        background-color: #696969;
+    }
+    .login-inputs {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
